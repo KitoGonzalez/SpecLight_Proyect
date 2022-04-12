@@ -1,0 +1,3 @@
+// Actions de carrito
+export const CHANGE_CARRITO_PROPS = "CHANGE_CARRITO_PROPS";
+export const AGREGAR_UNO_AL_CARRITO = "AGREGAR_UNO_AL_CARRITO";

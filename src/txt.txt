@@ -1,0 +1,11 @@
+Problemas a resolver.
+Solucionar Text.js 
+
+Agregar funcionalidad al carrito 
+
+filtering array of objects by property javascript+
+
+
+Pasos a seguir 
+
+carrito - firebase (Return de productos)/map/
