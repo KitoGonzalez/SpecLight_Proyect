@@ -84,9 +84,8 @@ const ItemListContainer = (props) => {
                                 <p className='paneles' >$ {item.precio}</p>
                                 <p className='paneles'>Paneles en Stock: {item.stock}</p>
                                 <button class="btn btn-dark" type="button">
-                                    <Link  to={`productos/${item.id}`}  >Detalles </Link>
+                                    <Link  to={`productos/${item.id}`}  >Detalles del Producto</Link>
                                 </button>
-                                <button className='btn btn-dark' onClick={(e) => prueba(e, item)}> Agregar al Carrito  </button>
                             </div>
                         </li>
 

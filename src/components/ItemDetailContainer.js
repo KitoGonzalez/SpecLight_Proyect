@@ -68,41 +68,15 @@ const ItemDetailContainer = (props) => {
     const agregarCarrito = () => {
         // Primero deberia comprobar si hay stock, en caso de que lo haya se lo puede agregar al item
         if (producto && producto.stock && producto.stock > 0) {
-            // [
-            //     {
-            //         idProducto: ,
-            //         cantidadSolicitada: 1 
-            //     },
-            //     {
-            //         idProducto: ,
-            //         cantidadSolicitada: 2
-            //     },
-            //     {
-            //         idProducto: ,
-            //         cantidadSolicitada: 10 
-            //     }
-            // ]
-
+           
             // Luego verificar si ya se lo agrego al carrito
             // En caso de que si deberiamos sumarle uno mas
             // En caso de que no, lo agregamos directamente
-            dispatcher(agregarItem(producto.id, 1))
+            dispatcher(agregarItem(producto.id, 1, producto.nombre, producto.precio))
         }
     }
 
-    // const Sumar = () => {
-    //     if (estado < 10) {
-    //         setEstado(estado + 1)
-    //     }
-    // }
-    // const Restar = () => {
-    //     if (estado > 0) {
-    //         setEstado(estado - 1)
-    //     }
-    // }
-    // const Resetear = () => {
-    //     setEstado(0)
-    // }
+
 
     return (
         <div className='centrado'>
@@ -112,7 +86,7 @@ const ItemDetailContainer = (props) => {
 
 
             <br />
-            <p className='paneles'>Cantidad Solicitada: {estado}</p> <p className='paneles'>Stock Disponible ¡10!</p>
+            <p className='paneles'>Stock Disponible ¡10!</p>
             <button className='btn btn-dark' onClick={agregarCarrito}>Agregar al carrito</button>
         </div>
     )

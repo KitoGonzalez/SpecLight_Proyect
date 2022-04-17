@@ -6,7 +6,6 @@ export const NavBar = () => {
     <nav>
         
         <Link to="/">Productos </Link>
-        
         <Link to="carrito">Tu Carrito <CartWidget/>  
         </Link> 
     </nav>

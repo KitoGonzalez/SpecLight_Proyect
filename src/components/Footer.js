@@ -4,10 +4,8 @@ export const Footer = () => {
   return (
     <footer>
         <p className='paneles'>© 2022 Copyright SpecLight.</p> 
-        <p className='paneles'>Este sitio se publica bajo licencia</p>
-        <span class="material-icons">
-        contact_support
-        </span>
+        <p className='paneles'>KitoGonzalez®
+        </p>
     </footer>
   )
 }

@@ -1,4 +1,4 @@
-import { CHANGE_CARRITO_PROPS, AGREGAR_UNO_AL_CARRITO } from "../constants/Actions";
+import { CHANGE_CARRITO_PROPS, AGREGAR_UNO_AL_CARRITO, ELIMINAR_DEL_CARRITO } from "../constants/Actions";
 
 // [
 //     {
@@ -42,6 +42,14 @@ export default function carritoReducer(state = initialState, action) {
 
 
             return { ...state, items: items  }
+        case ELIMINAR_DEL_CARRITO:
+            const itemsAFiltrar = [...state.items]
+
+            // UTILIZO LA FUNCION filter de los arrays
+            const filtrados = itemsAFiltrar.filter((item) => item.id !== action.id)
+            // AQUI OBTENGO TODOS LOS ITEMS DISTINTOS AL QUE QUIERO BORRAR EN UN ARREGLO NUEVO
+
+            return { ...state, items: filtrados }
         default:
             return state;
     }
