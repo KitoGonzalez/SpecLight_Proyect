@@ -113,7 +113,7 @@ const ItemDetailContainer = (props) => {
 
             <br />
             <p className='paneles'>Cantidad Solicitada: {estado}</p> <p className='paneles'>Stock Disponible ¡10!</p>
-            <button onClick={agregarCarrito}>Agregar al carrito</button>
+            <button className='btn btn-dark' onClick={agregarCarrito}>Agregar al carrito</button>
         </div>
     )
 }

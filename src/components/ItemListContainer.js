@@ -83,10 +83,10 @@ const ItemListContainer = (props) => {
                                 <h1 className='paneles'>{item.nombre}</h1>
                                 <p className='paneles' >$ {item.precio}</p>
                                 <p className='paneles'>Paneles en Stock: {item.stock}</p>
-                                <button class="" type="button">
-                                    <Link className='negroCabron' to={`productos/${item.id}`}  >Detalles </Link>
+                                <button class="btn btn-dark" type="button">
+                                    <Link  to={`productos/${item.id}`}  >Detalles </Link>
                                 </button>
-                                <button onClick={(e) => prueba(e, item)}> Agregar al Carrito  </button>
+                                <button className='btn btn-dark' onClick={(e) => prueba(e, item)}> Agregar al Carrito  </button>
                             </div>
                         </li>
 

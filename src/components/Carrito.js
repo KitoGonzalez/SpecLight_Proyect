@@ -1,12 +1,11 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { useSelector } from 'react-redux'
 
 export const Carrito = () => {
 
-    const resultado2 = useParams()
-  console.log(resultado2)
+  const store = useSelector(store => store)
   
   return (
-    <div>Tu Carrito Actual: {resultado2} </div>
+    <div>Tu Carrito Actual: {store.Carrito} </div>
   )
 }
